@@ -97,3 +97,16 @@
 .Mui-selected {
     background: rgba(157, 176, 196, 0.23) !important;
 }
+@media screen and (max-width: 991px) {
+    .active-main-container{
+        margin: 60px 0 0 0;
+        transition: all 0.4s ease;
+    }
+    .inactive-main-container {
+        margin: 60px 0 0 0;
+        transition: all 0.4s ease;
+    }
+    .inactive-side-bar{
+        left: -70px;
+    }
+}
