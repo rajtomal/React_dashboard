@@ -34,6 +34,7 @@ const LayOut = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [activeMenu, setActiveMenu] = useState(location.pathname);
+    // const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
 
     const arrowClick = () => {
         setOpen(!openSideBar)
@@ -47,12 +48,14 @@ const LayOut = () => {
             navigate('/login');
         }
     };
-
-
     const handleMenuClick = (id, path) => {
-        if(openSideBar == false){
+        if (openSideBar == false) {
             setOpen(!openSideBar)
         }
+        if (window.innerWidth <= 991 && path !== null) {
+            setOpen(!openSideBar)
+        }
+
         setOpenMenu((prevOpen) => ({
             ...prevOpen,
             [id]: !prevOpen[id], // Toggle open/close for the specific menu item
@@ -67,6 +70,9 @@ const LayOut = () => {
         setActiveMenu(path); // Set the active menu
         navigate(path);
         console.log(path);
+        if (window.innerWidth <= 991 && path !== null) {
+            setOpen(!openSideBar)
+        }
     };
     const menu = [
         {
@@ -178,7 +184,7 @@ const LayOut = () => {
                                             </ListItemIcon>
                                             Settings
                                         </MenuItem>
-                                        <MenuItem onClick={ () => handleClose('logout')}>
+                                        <MenuItem onClick={() => handleClose('logout')}>
                                             <ListItemIcon>
                                                 <Logout fontSize="small" />
                                             </ListItemIcon>
