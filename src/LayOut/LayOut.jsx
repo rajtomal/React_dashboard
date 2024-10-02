@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './LayOut.scss'
+import './layout.scss'
 import { Icon } from '@iconify-icon/react';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
