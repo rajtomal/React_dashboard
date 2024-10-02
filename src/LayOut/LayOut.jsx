@@ -50,6 +50,9 @@ const LayOut = () => {
 
 
     const handleMenuClick = (id, path) => {
+        if(openSideBar == false){
+            setOpen(!openSideBar)
+        }
         setOpenMenu((prevOpen) => ({
             ...prevOpen,
             [id]: !prevOpen[id], // Toggle open/close for the specific menu item
