@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './factory.scss'
+import './Factory.scss'
 import DynamicTable from '../../Components/DynamicTable/DynamicTable'
 import { Icon } from '@iconify-icon/react';
 
