@@ -2,8 +2,17 @@ a {
   text-decoration: none;
 }
 
+html {
+  scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin;
+}
+
 body {
   font-family: inter;
   padding: 0;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 2px !important;
 }

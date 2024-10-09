@@ -1,0 +1,79 @@
+.edit-icon {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #dee5fc;
+    color: #292588;
+}
+
+.view-icon {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #F3E6FF;
+    color: #6B2487;
+}
+
+.delete-icon {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #FFE6E6;
+    color: #872424;
+}
+
+.MuiTableRow-root:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.MuiTableCell-root {
+    height: 50px;
+    padding: 0 16px !important;
+}
+
+.MuiTableHead-root {
+    background: rgba(71, 93, 117, 0.2);
+}
+
+.MuiTableCell-head {
+    background: transparent !important;
+}
+
+.MuiTableSortLabel-root {
+    color: #111827;
+    font-weight: 600;
+}
+
+.MuiTableCell-head {
+    color: #111827 !important;
+    font-weight: 600 !important;
+}
+
+.MuiPaper-root {
+    border-radius: 0 !important;
+}
+
+.main-container {
+    width: 100vw !important;
+}
+
+// @media screen and (max-width: 991px) {
+//     .main-container {
+//         width: 100vw !important;
+//     }
+// }
